@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ekhaya Gates and Interiors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>Ekhaya Home Solutions</h1>
+  <p class="slogan">Timeless Craftsmanship, Modern Living</p>
+</header>
+
+<section class="services">
+  <h2>Our Core Services</h2>
+  <div class="service-cards">
+    <div class="card">Kitchen Revamps</div>
+    <div class="card">Gate Fabrication</div>
+    <div class="card">Tiling & Flooring</div>
+    <div class="card">Custom Wardrobes</div>
+    <div class="card">Interior Cladding</div>
+  </div>
+</section>
+<section class="testimonials">
+
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial">
+    <p>"Absolutely beautiful workmanship my kitchen feels brand new!"</p>
+    <span>– Thabiso M.</span>
+  </div>
+  <div class="testimonial">
+    <p>"Professional, punctual, and neat. I highly recommend them!"</p>
+    <span>– Lerato K.</span>
+  </div>
+  <div class="testimonial">
+    <p>"Affordable ,really made me house ekhaya lol "</p>
+    <span>– lesedi lesetja.</span>
+    <div class="testimonial">
+    <p>"Overall, I am happy with my new gate, however the service was quite slow in the beginning. Improve on tht=at and I will be referring my family "</p>
+    <span>– Jaco Meyer</span>
+  </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <details>
+    <summary>How long does a kitchen revamp take?</summary>
+    <p>It usually takes 1–2 weeks depending on the size and materials chosen.</p>
+  </details>
+  <details>
+    <summary>Do you offer free quotes?</summary>
+    <p>Yes! We offer free WhatsApp and email quotes.</p>
+  </details>
+  <details>
+    <summary>Do you work outside Pretoria?</summary>
+    <p>We mainly operate in Gauteng but are open to other regions based on availability.</p>
+  </details>
+</section>
+
+
+
+
+
+  <section class="hero-slideshow">
+    <div class="slideshow">
+      <img src="gate1.jpg" class="slide-img" alt="Ekhaya Image">
+  <img src="ekhayahomesolutions.jpg" class="slide-img" alt="Ekhaya Image">
+  <img src="image1.jpg" class="slide-img" alt="Ekhaya Image">
+  <img src="interior1.jpg" class="slide-img" alt="Ekhaya Image"> 
+     </div>
+  </section>
+
+  <section class="about">
+    <h2>What We Do</h2>
+    <p>
+      At Ekhaya, we specialize in personalized house transformations that elevate both function and aesthetics.
+      Whether you're looking for a complete overhaul or a simple update, our skilled team delivers with quality and care.
+      From luxury finishes to practical layouts, we design around your needs and lifestyle. Making your house a home. 
+    </p>
+  </section>
+
+  
+  
+  <select id="kitchen-service" name="service">
+    <option value="">-- Select an option --</option>
+    <option value="full">Full Kitchen Renovation</option>
+    <option value="countertops">Countertops Only</option>
+    <option value="cabinets">Cabinet Refacing</option>
+    <option value="tiling">Tiling & Backsplash</option>
+    <option value="wardrobes">Built-in Wardrobes</option>
+    <option value="custom">Custom Design Request</option>
+  </select>
+</div>
+
+
+    <div id="service-description" class="service-description"></div>
+  </section>
+
+
+  <footer>
+    <p>Contact us: <a href="mailto:ekhayhomesolutions@gmail.com.com">ekhayahomesolutions@gmail.com</a></p>
+    <p>&copy; 2020 Ekhaya </p>
+  </footer>
+
+
+ 
+<!-- Contact Section -->
+<section class="contact">
+  <h2>Contact & Socials</h2>
+  <p>Reach out to us on any of the platforms below:</p>
+  <div class="social-links">
+    <a href="https://wa.me/27677539066" target="_blank">WhatsApp</a>
+    <a href="mailto:ekhayahomesolutions@gmail.com">Email</a>
+  </div>
+</section>
+
+  
+  <script>
+  const slides = document.querySelectorAll(".slide-img");
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? "1" : "0";
+    });
+  }
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 3000);
+
+  showSlide(current);
+</script>
+<section class="quote-section">
+  <div class="quote-box">
+    <h2>Request a Quote via WhatsApp</h2>
+    <a href="https://wa.me/27677539066" target="_blank" class="whatsapp-button">Message Us</a>
+  </div>
+
+ <div class="quote-box">
+  <h2>Request a Quote via Email</h2>
+  <form action="https://formsubmit.co/ekhayahomesolutions@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" placeholder="Your Quote Request" rows="5" required></textarea><br>
+
+    <!-- Prevent bot spam -->
+    <input type="text" name="_honey" style="display:none">
+
+    <!-- No CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirect after submission (optional) -->
+    
+    <button type="submit">Send Quote Request</button>
+  </form>
+</div>
+
+
+</section>
+
+</body>
+
+</html>
