@@ -4,165 +4,226 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ekhaya Gates and Interiors</title>
+  <title>Ekhaya Home Solutions</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-  <h1>Ekhaya Home Solutions</h1>
-  <p class="slogan">Timeless Craftsmanship, Modern Living</p>
-</header>
+    <h1>Ekhaya Home Solutions</h1>
+    <p class="slogan">Timeless Craftsmanship, Modern Living</p>
+  </header>
 
-<section class="services">
-  <h2>Our Core Services</h2>
-  <div class="service-cards">
-    <div class="card">Kitchen Revamps</div>
-    <div class="card">Gate Fabrication</div>
-    <div class="card">Tiling & Flooring</div>
-    <div class="card">Custom Wardrobes</div>
-    <div class="card">Interior Cladding</div>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#gates">Gates</a></li>
+          <li><a href="#tv-stands">Modern TV Stands</a></li>
+          <li><a href="#cabinets">Cabinets</a></li>
+          <li><a href="#materials">Cabinet Materials</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="sidebar-section">
+        <h3>How We Work</h3>
+        <ul class="bullets">
+          <li>Provide self-measurements to save costs.</li>
+          <li>Site visit available; call-out fee applies.</li>
+          <li>We offer 3D models to plan your space and reduce site visits.</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h3>Company Policy</h3>
+        <ul class="bullets">
+          <li>Quotations valid for 14 days.</li>
+          <li>Lead times depend on scope and materials.</li>
+          <li>Payments: 60% deposit, balance on completion.</li>
+          <li>12-month workmanship warranty.</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section" id="mission-values">
+        <h3>Mission & Values</h3>
+        <p>We create practical, modern spaces using quality materials while keeping projects affordable and transparent.</p>
+      </section>
+    </aside>
+
+    <main class="main-content">
+      <section class="filters">
+        <input id="search-input" type="search" placeholder="Search products (gates, TV stands, cabinets)...">
+        <select id="filter-category">
+          <option value="">All Categories</option>
+          <option value="gates">Gates</option>
+          <option value="tv-stands">TV Stands</option>
+          <option value="cabinets">Cabinets</option>
+        </select>
+        <select id="filter-style">
+          <option value="">All Styles</option>
+          <option value="modern">Modern</option>
+          <option value="classic">Classic</option>
+          <option value="industrial">Industrial</option>
+        </select>
+        <select id="filter-material">
+          <option value="">All Materials</option>
+          <option value="M001">Matte White (M001)</option>
+          <option value="W012">Oak Woodgrain (W012)</option>
+          <option value="H034">High-Gloss Grey (H034)</option>
+          <option value="B022">Black Slate (B022)</option>
+        </select>
+      </section>
+
+      <section id="gates" class="category">
+        <div class="category-header">
+          <h2>Gates</h2>
+        </div>
+        <div class="category-slideshow" data-category="gates">
+          <img src="gate1.jpg" loading="lazy" class="slide-img" alt="Gate design 1">
+          <img src="gate1.jpg" loading="lazy" class="slide-img" alt="Gate design 2">
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-category="gates" data-style="modern" data-name="Modern Security Gate">
+            <img src="gate1.jpg" loading="lazy" alt="Modern Security Gate">
+            <div class="product-info">
+              <h3>Modern Security Gate</h3>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="testimonial">“Strong and beautiful. Great finish!” – Thabiso</p>
+              <label class="select-row"><input type="checkbox" class="select-product"> Add to quotation</label>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="tv-stands" class="category">
+        <div class="category-header">
+          <h2>Modern TV Stands</h2>
+        </div>
+        <div class="category-slideshow" data-category="tv-stands">
+          <img src="tv1.jpg" loading="lazy" class="slide-img" alt="TV stand 1">
+          <img src="tv1.jpg" loading="lazy" class="slide-img" alt="TV stand 2">
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-category="tv-stands" data-style="modern" data-name="Floating TV Console">
+            <img src="tv1.jpg" loading="lazy" alt="Floating TV Console">
+            <div class="product-info">
+              <h3>Floating TV Console</h3>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="testimonial">“Neat cable management and sleek look.” – Lerato</p>
+              <label class="select-row"><input type="checkbox" class="select-product"> Add to quotation</label>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="cabinets" class="category">
+        <div class="category-header">
+          <h2>Cabinets</h2>
+        </div>
+        <div class="category-slideshow" data-category="cabinets">
+          <img src="interior1.jpg" loading="lazy" class="slide-img" alt="Cabinet interior 1">
+          <img src="image2.jpg" loading="lazy" class="slide-img" alt="Cabinet interior 2">
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-category="cabinets" data-style="modern" data-name="Modular Kitchen Cabinets" data-materials="M001,W012,H034,B022">
+            <img src="interior1.jpg" loading="lazy" alt="Modular Kitchen Cabinets">
+            <div class="product-info">
+              <h3>Modular Kitchen Cabinets</h3>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="testimonial">“My kitchen feels brand new!” – Lesedi</p>
+              <label class="select-row"><input type="checkbox" class="select-product"> Add to quotation</label>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="materials" class="materials">
+        <h2>Cabinet Material Options</h2>
+        <label for="material-select">Select a finish (with reference):</label>
+        <select id="material-select">
+          <option value="">-- Choose a material --</option>
+          <option value="M001">Matte White (Ref: M001)</option>
+          <option value="W012">Oak Woodgrain (Ref: W012)</option>
+          <option value="H034">High-Gloss Grey (Ref: H034)</option>
+          <option value="B022">Black Slate (Ref: B022)</option>
+        </select>
+      </section>
+
+      <section id="why-us" class="why-us">
+        <h2>Why Choose Us?</h2>
+        <ul class="bullets">
+          <li><strong>Affordability</strong> – value-driven pricing.</li>
+          <li><strong>3D Design</strong> – plan before we build.</li>
+          <li><strong>Quality Materials</strong> – durable and reliable.</li>
+          <li><strong>Modern Finishes</strong> – clean, timeless look.</li>
+        </ul>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="before-after">
+          <figure>
+            <img src="interior1.jpg" loading="lazy" alt="Before">
+            <figcaption>Before</figcaption>
+          </figure>
+          <figure>
+            <img src="image2.jpg" loading="lazy" alt="After">
+            <figcaption>After</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="quote" class="quote">
+        <h2>Request Quotation</h2>
+        <input id="location-pin" type="url" placeholder="Paste your location pin (Google Maps link)">
+        <button id="request-quote" class="whatsapp-button">Request via WhatsApp</button>
+        <p class="quote-hint">Your selected products and material reference will be included automatically.</p>
+      </section>
+
+      <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Do you offer free quotes?</summary>
+          <p>Yes, WhatsApp and email quotes are free.</p>
+        </details>
+        <details>
+          <summary>Do you work outside Pretoria?</summary>
+          <p>We mainly operate in Gauteng but can consider other regions.</p>
+        </details>
+        <details>
+          <summary>What are your lead times?</summary>
+          <p>Lead times depend on scope and selected materials.</p>
+        </details>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact & Socials</h2>
+        <p>Reach out to us on any of the platforms below:</p>
+        <div class="social-links">
+          <a href="https://wa.me/27677539066" target="_blank">WhatsApp</a>
+          <a href="mailto:ekhayahomesolutions@gmail.com">Email</a>
+        </div>
+        <form class="secure-contact-form" action="https://formsubmit.co/ekhayahomesolutions@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+          <div class="form-row"><input type="text" name="name" placeholder="Your Name" required></div>
+          <div class="form-row"><input type="email" name="email" placeholder="Your Email" required></div>
+          <div class="form-row"><textarea name="message" placeholder="Your Message" rows="5" required></textarea></div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>Contact us: <a href="mailto:ekhayahomesolutions@gmail.com">ekhayahomesolutions@gmail.com</a></p>
+        <p>&copy; 2025 Ekhaya Home Solutions</p>
+      </footer>
+    </main>
   </div>
-</section>
-<section class="testimonials">
 
-  <h2>What Our Clients Say</h2>
-  <div class="testimonial">
-    <p>"Absolutely beautiful workmanship my kitchen feels brand new!"</p>
-    <span>– Thabiso M.</span>
-  </div>
-  <div class="testimonial">
-    <p>"Professional, punctual, and neat. I highly recommend them!"</p>
-    <span>– Lerato K.</span>
-  </div>
-  <div class="testimonial">
-    <p>"Affordable ,really made me house ekhaya lol "</p>
-    <span>– lesedi lesetja.</span>
-    <div class="testimonial">
-    <p>"Overall, I am happy with my new gate, however the service was quite slow in the beginning. Improve on tht=at and I will be referring my family "</p>
-    <span>– Jaco Meyer</span>
-  </div>
-  </div>
-</section>
-
-<section class="faq">
-  <h2>Frequently Asked Questions</h2>
-  <details>
-    <summary>How long does a kitchen revamp take?</summary>
-    <p>It usually takes 1–2 weeks depending on the size and materials chosen.</p>
-  </details>
-  <details>
-    <summary>Do you offer free quotes?</summary>
-    <p>Yes! We offer free WhatsApp and email quotes.</p>
-  </details>
-  <details>
-    <summary>Do you work outside Pretoria?</summary>
-    <p>We mainly operate in Gauteng but are open to other regions based on availability.</p>
-  </details>
-</section>
-
-
-
-
-
-  <section class="hero-slideshow">
-    <div class="slideshow">
-      <img src="gate1.jpg" class="slide-img" alt="Ekhaya Image">
-  <img src="ekhayahomesolutions.jpg" class="slide-img" alt="Ekhaya Image">
-  <img src="image1.jpg" class="slide-img" alt="Ekhaya Image">
-  <img src="interior1.jpg" class="slide-img" alt="Ekhaya Image"> 
-     </div>
-  </section>
-
-  <section class="about">
-    <h2>What We Do</h2>
-    <p>
-      At Ekhaya, we specialize in personalized house transformations that elevate both function and aesthetics.
-      Whether you're looking for a complete overhaul or a simple update, our skilled team delivers with quality and care.
-      From luxury finishes to practical layouts, we design around your needs and lifestyle. Making your house a home. 
-    </p>
-  </section>
-
-  
-  
-  <select id="kitchen-service" name="service">
-    <option value="">-- Select an option --</option>
-    <option value="full">Full Kitchen Renovation</option>
-    <option value="countertops">Countertops Only</option>
-    <option value="cabinets">Cabinet Refacing</option>
-    <option value="tiling">Tiling & Backsplash</option>
-    <option value="wardrobes">Built-in Wardrobes</option>
-    <option value="custom">Custom Design Request</option>
-  </select>
-</div>
-
-
-    <div id="service-description" class="service-description"></div>
-  </section>
-
-
-  <footer>
-    <p>Contact us: <a href="mailto:ekhayhomesolutions@gmail.com.com">ekhayahomesolutions@gmail.com</a></p>
-    <p>&copy; 2020 Ekhaya </p>
-  </footer>
-
-
- 
-<!-- Contact Section -->
-<section class="contact">
-  <h2>Contact & Socials</h2>
-  <p>Reach out to us on any of the platforms below:</p>
-  <div class="social-links">
-    <a href="https://wa.me/27677539066" target="_blank">WhatsApp</a>
-    <a href="mailto:ekhayahomesolutions@gmail.com">Email</a>
-  </div>
-</section>
-
-  
-  <script>
-  const slides = document.querySelectorAll(".slide-img");
-  let current = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.style.opacity = i === index ? "1" : "0";
-    });
-  }
-
-  setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  }, 3000);
-
-  showSlide(current);
-</script>
-<section class="quote-section">
-  <div class="quote-box">
-    <h2>Request a Quote via WhatsApp</h2>
-    <a href="https://wa.me/27677539066" target="_blank" class="whatsapp-button">Message Us</a>
-  </div>
-
- <div class="quote-box">
-  <h2>Request a Quote via Email</h2>
-  <form action="https://formsubmit.co/ekhayahomesolutions@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Quote Request" rows="5" required></textarea><br>
-
-    <!-- Prevent bot spam -->
-    <input type="text" name="_honey" style="display:none">
-
-    <!-- No CAPTCHA -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <!-- Redirect after submission (optional) -->
-    
-    <button type="submit">Send Quote Request</button>
-  </form>
-</div>
-
-
-</section>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
